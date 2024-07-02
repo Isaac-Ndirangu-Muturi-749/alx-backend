@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 1-app module"""
+""" 2-app module"""
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
