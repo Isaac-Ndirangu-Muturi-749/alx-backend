@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """ 6-app module"""
 
 from flask import Flask, render_template, request, g
