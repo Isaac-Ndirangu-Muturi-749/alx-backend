@@ -3,8 +3,8 @@
 
 from flask import Flask, render_template, request, g
 from flask_babel import Babel
-import pytz
 import datetime
+import pytz
 
 app = Flask(__name__)
 babel = Babel(app)
@@ -67,7 +67,7 @@ def get_user():
 def before_request():
     """Executed before each request to set the user in flask.g."""
     g.user = get_user()
-    utcNow = pytz.utc.localize(datetime.datetime.utcnow())
+    utcNow = datetime.datetime.now(pytz.utc)
     local_time_now = utcNow.astimezone(pytz.timezone(get_timezone()))
 
 
