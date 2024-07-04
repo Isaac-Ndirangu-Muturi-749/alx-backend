@@ -28,7 +28,7 @@ app.config.from_object(Config)
 
 
 @app.route('/')
-def index():
+def root():
     """Render the index page with localized messages."""
     return render_template("6-index.html")
 
